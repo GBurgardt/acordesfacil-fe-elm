@@ -71,7 +71,7 @@ update msg model =
         { model | statusRequest = Loading }, 
         Http.get 
           { 
-            url = "http://localhost:3000/" ++ model.content,
+            url = "https://acordesfacil.tk:3000/" ++ model.content,
             expect = Http.expectJson GotText tabDecoder
           }
       )
